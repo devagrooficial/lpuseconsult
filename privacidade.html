@@ -6,18 +6,13 @@
 <title>Política de Privacidade | Use Consult</title>
 <meta name="description" content="Política de Privacidade da Use Consult — como tratamos dados pessoais em conformidade com a LGPD.">
 <meta name="robots" content="index, follow">
-<link rel="icon" type="image/svg+xml" href="public/logo.svg">
-<link rel="alternate icon" href="public/favicon.ico">
+<link rel="icon" href="public/logo/icon3.png">
+<link rel="alternate icon" href="public/logo/favicon.ico">
+<link rel="apple-touch-icon" href="public/logo/icon-180.png">
 <script>
   // Precisa existir antes do <img class="logo-img"> ser parseado (o onerror
   // pode disparar durante o parsing do HTML, antes de assets/js/main.js carregar).
   function handleLogoError(img) {
-    var fallback = img.getAttribute("data-fallback");
-    if (fallback && !img.getAttribute("data-tried-fallback")) {
-      img.setAttribute("data-tried-fallback", "1");
-      img.src = fallback;
-      return;
-    }
     img.style.display = "none";
     var textLogo = img.nextElementSibling;
     if (textLogo) textLogo.style.display = "inline-flex";
@@ -46,8 +41,8 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo" aria-label="Use Consult — página inicial">
-      <img class="logo-img" src="public/logo.svg" alt="Use Consult"
-           data-fallback="public/logo.png" onerror="handleLogoError(this)">
+      <img class="logo-img" src="public/logo/logouseconsult1.png" alt="Use Consult"
+           onerror="handleLogoError(this)">
       <span class="logo-fallback-text"><span class="logo-text-use">Use</span> <span class="logo-text-consult">Consult</span></span>
     </a>
     <nav class="site-nav" aria-label="Navegação principal" style="position:static;transform:none;opacity:1;pointer-events:auto;padding:0;">
