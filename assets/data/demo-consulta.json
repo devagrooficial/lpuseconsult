@@ -1,0 +1,23 @@
+{
+  "aviso": "Resultado ilustrativo gerado localmente para fins de demonstração. Nenhuma consulta real é realizada a partir deste site e nenhum dado pessoal ou empresarial real é exibido nesta página.",
+  "cpf": {
+    "tipo": "CPF",
+    "nome": "Fulano de Tal (nome fictício)",
+    "status": "Situação regular (exemplo)",
+    "checks": [
+      "Nenhuma restrição encontrada (exemplo)",
+      "Documentação compatível (exemplo)",
+      "Compatível com as diretrizes da LGPD"
+    ]
+  },
+  "cnpj": {
+    "tipo": "CNPJ",
+    "nome": "Modelo Transportes e Logística Ltda. (empresa fictícia)",
+    "status": "Situação regular (exemplo)",
+    "checks": [
+      "Nenhuma restrição encontrada (exemplo)",
+      "Quadro societário compatível (exemplo)",
+      "Compatível com as diretrizes da LGPD"
+    ]
+  }
+}

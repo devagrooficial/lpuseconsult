@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade | Use Consult</title>
+<meta name="description" content="Política de Privacidade da Use Consult — como tratamos dados pessoais em conformidade com a LGPD.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="public/logo.svg">
+<link rel="alternate icon" href="public/favicon.ico">
+<script>
+  // Precisa existir antes do <img class="logo-img"> ser parseado (o onerror
+  // pode disparar durante o parsing do HTML, antes de assets/js/main.js carregar).
+  function handleLogoError(img) {
+    var fallback = img.getAttribute("data-fallback");
+    if (fallback && !img.getAttribute("data-tried-fallback")) {
+      img.setAttribute("data-tried-fallback", "1");
+      img.src = fallback;
+      return;
+    }
+    img.style.display = "none";
+    var textLogo = img.nextElementSibling;
+    if (textLogo) textLogo.style.display = "inline-flex";
+  }
+</script>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .legal { padding: 56px 0 96px; }
+  .legal .container { max-width: 820px; }
+  .legal h1 { font-size: clamp(28px,4vw,38px); letter-spacing: -0.01em; margin-bottom: 8px; }
+  .legal .updated { color: var(--muted-2); font-size: 13.5px; margin-bottom: 40px; }
+  .legal h2 { font-size: 20px; margin: 36px 0 12px; color: var(--navy-900); }
+  .legal p, .legal li { color: var(--muted); font-size: 15.5px; line-height: 1.7; }
+  .legal ul { padding-left: 20px; list-style: disc; margin-top: 10px; }
+  .legal li { margin-bottom: 8px; }
+  .legal .callout {
+    background: var(--bg-alt); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 20px 22px; margin-bottom: 36px; font-size: 14px; color: var(--muted);
+  }
+  .back-link { display:inline-flex; align-items:center; gap:8px; font-weight:700; color: var(--navy); margin-bottom:28px; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Use Consult — página inicial">
+      <img class="logo-img" src="public/logo.svg" alt="Use Consult"
+           data-fallback="public/logo.png" onerror="handleLogoError(this)">
+      <span class="logo-fallback-text"><span class="logo-text-use">Use</span> <span class="logo-text-consult">Consult</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal" style="position:static;transform:none;opacity:1;pointer-events:auto;padding:0;">
+      <ul><li><a href="index.html">Voltar ao site</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="legal">
+  <div class="container">
+    <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    <h1>Política de Privacidade</h1>
+    <p class="updated">Última atualização: 20 de setembro de 2026</p>
+
+    <div class="callout">
+      Este documento é um modelo inicial de política de privacidade, escrito para refletir como este site funciona hoje. Antes da publicação definitiva, recomendamos revisão por um profissional jurídico especializado em LGPD, especialmente para descrever com precisão o tratamento de dados realizado nas consultas comerciais (fora deste site).
+    </div>
+
+    <h2>1. Quem somos</h2>
+    <p>A Use Consult é uma consultoria especializada em gestão de risco, com foco em verificação de CPF e CNPJ para empresas de Recursos Humanos, transportadoras e seguradoras. Esta política descreve como tratamos dados pessoais coletados através deste site institucional.</p>
+
+    <h2>2. Quais dados este site coleta</h2>
+    <p>Este site é uma página institucional estática. Ele não possui login, não realiza consultas reais de CPF/CNPJ e não armazena dados em servidores próprios. Os únicos dados pessoais tratados aqui são os que você decide nos enviar voluntariamente:</p>
+    <ul>
+      <li><strong>Formulário de contato:</strong> nome, e-mail corporativo, empresa, segmento de atuação, telefone (opcional) e mensagem (opcional). Ao enviar o formulário, esses dados são usados para abrir um e-mail no seu próprio aplicativo, direcionado ao nosso time comercial — eles não passam por nenhum servidor deste site.</li>
+      <li><strong>Simulador de consulta (demonstração):</strong> o número de CPF/CNPJ digitado na seção "Demonstração" é validado apenas no seu próprio navegador (cálculo do dígito verificador). Ele nunca é enviado, armazenado ou consultado em nenhuma base de dados — o resultado exibido é sempre um exemplo fictício.</li>
+    </ul>
+
+    <h2>3. O que este site não faz</h2>
+    <ul>
+      <li>Não realizamos consultas reais de CPF ou CNPJ a partir deste site público.</li>
+      <li>Não exibimos, armazenamos ou compartilhamos dados pessoais reais de terceiros nesta página.</li>
+      <li>Não utilizamos cookies de rastreamento ou ferramentas de analytics de terceiros nesta versão do site.</li>
+    </ul>
+
+    <h2>4. Como usamos os dados do formulário de contato</h2>
+    <p>Os dados preenchidos no formulário de contato são utilizados exclusivamente para responder à sua solicitação comercial: entender sua necessidade, apresentar uma proposta e, havendo interesse mútuo, formalizar um contrato de acesso às nossas consultas. Não utilizamos esses dados para finalidades diferentes da apresentada, nem os compartilhamos com terceiros para fins de marketing.</p>
+
+    <h2>5. Consultas reais de CPF/CNPJ (fora deste site)</h2>
+    <p>O serviço de consulta de CPF e CNPJ da Use Consult é disponibilizado exclusivamente a clientes com contrato formal de acesso — nunca de forma pública ou irrestrita. O tratamento de dados pessoais realizado durante essas consultas contratadas é regido por instrumento contratual específico e por uma política de privacidade própria do produto, apresentada no momento da contratação, com bases legais, finalidade e prazos de retenção definidos conforme a LGPD.</p>
+
+    <h2>6. Seus direitos como titular de dados (LGPD)</h2>
+    <p>Nos termos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você pode solicitar, em relação aos dados que nos enviou por este site: confirmação de tratamento, acesso, correção, anonimização, portabilidade ou eliminação, além de informações sobre com quem compartilhamos seus dados. Para exercer esses direitos, entre em contato pelo e-mail informado na seção 7.</p>
+
+    <h2>7. Contato</h2>
+    <p>Dúvidas sobre esta política ou sobre o tratamento dos seus dados podem ser enviadas para
+      <a data-contact-email href="#" style="color:var(--navy);font-weight:700;">contato@useconsult.com.br</a>.
+    </p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-bottom" style="margin-top:0;">
+    <span>© <span id="year"></span> Use Consult. Todos os direitos reservados.</span>
+    <a href="index.html" style="font-weight:700;color:var(--navy);">Voltar ao site</a>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
