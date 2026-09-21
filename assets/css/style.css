@@ -333,7 +333,8 @@ section { position: relative; }
 .demo .eyebrow { background: rgba(91,183,122,0.16); color: #8fe0ab; }
 .demo-panel {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr); /* minmax(0,..): sem isso, um filho com
+    conteúdo largo (ex.: texto sem quebra) força a coluna a crescer além do container */
   gap: 28px;
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.12);
@@ -343,11 +344,17 @@ section { position: relative; }
 @media (max-width: 640px) { .demo-panel { padding: 24px; } }
 
 .demo-form { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; }
-.demo-field { flex: 1 1 280px; }
+.demo-field { flex: 1 1 280px; min-width: 0; }
 .demo-field label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 8px; color: rgba(255,255,255,0.8); }
 .demo-input-row { display: flex; gap: 12px; }
+@media (max-width: 460px) {
+  .demo-input-row { flex-direction: column; }
+  .demo-form .btn { width: 100%; }
+}
 .demo-input-row input {
   flex: 1;
+  min-width: 0; /* sem isso, o <input> não encolhe abaixo da sua largura intrínseca
+                   em flexbox (min-width:auto por padrão) e estoura a página no mobile */
   padding: 15px 18px;
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.22);
@@ -398,7 +405,9 @@ section { position: relative; }
   border-radius: 12px;
   font-size: 13.5px;
   margin-bottom: 22px;
+  min-width: 0; /* filho de grid — ver comentário em .demo-panel */
 }
+.demo-banner span { min-width: 0; } /* mesmo motivo: span com texto longo num flex row */
 .demo-banner svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 1px; color: var(--green); }
 
 /* ==========================================================================
