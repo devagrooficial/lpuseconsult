@@ -179,6 +179,7 @@ section { position: relative; }
 .site-nav ul { display: flex; align-items: center; gap: 30px; }
 .site-nav a { font-weight: 600; font-size: 15px; color: var(--muted); transition: color .15s ease; }
 .site-nav a:hover { color: var(--navy); }
+.site-nav .nav-cta { display: none; } /* só aparece dentro do menu mobile — ver media query abaixo */
 
 .header-actions { display: flex; align-items: center; gap: 14px; }
 .header-actions .btn { padding: 11px 22px; font-size: 14px; }
@@ -213,7 +214,8 @@ section { position: relative; }
   .site-nav.is-open { opacity: 1; transform: none; pointer-events: auto; }
   .site-nav ul { flex-direction: column; align-items: flex-start; gap: 4px; }
   .site-nav a { display: block; padding: 14px 6px; width: 100%; font-size: 17px; border-bottom: 1px solid var(--border); }
-  .header-actions .btn-primary-label { display: none; }
+  .site-nav .nav-cta { display: flex; margin-top: 22px; }
+  .header-actions .btn-primary { display: none; }
   .nav-toggle { display: inline-flex; }
 }
 @media (min-width: 901px) {
@@ -489,7 +491,7 @@ section { position: relative; }
   border: 1px solid var(--border);
   border-radius: 10px;
   background: var(--bg-alt);
-  font-size: 15px;
+  font-size: 16px; /* <16px faz o iOS Safari dar zoom automático ao focar o campo */
 }
 .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--green); background: #fff; }
 .field textarea { resize: vertical; min-height: 100px; }
